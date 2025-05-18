@@ -1,0 +1,157 @@
+body {
+    overflow: hidden; /* Hides scrollbars */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.hexMapContainer {
+    width: 100%; /* Set to desired width */
+    height: 90vh; /* Set to desired height */
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Positioning context for the hex map */
+    background-size: cover; /* Adjust to cover the entire container */
+    background-position: center; /* Center the background image */
+}
+
+
+.hexMap {
+    position: absolute; /* Allows for positioning */
+    width: 100%; /* Full width */
+    height: auto; /* Adjust height as needed */
+}
+
+/* d:\UBG\gametextures.css */
+
+.hexagon {
+    position: absolute;
+    background-color: rgb(0, 170, 255); /* Change to desired color */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 50; /* Remove margin */
+    padding: 1;
+     /* Optional: Add border for visibility */
+}#nationSelectionContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+#nationSelectionContainer select, #nationSelectionContainer button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+#provinceInfoBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: none; /* Initially hidden */
+    z-index: 1000;
+}
+#gamebar {
+    background-color: dimgrey;
+}
+#provinceCount {
+    left: 50%;
+}
+#add{
+    position: relative;
+    left: 15%;
+    top: 200%;
+}
+#armyContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+#armyContainer select, #armyContainer button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+.flag {
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.manage-bar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .manage-bar button {
+    margin: 5px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .manage-bar button:hover {
+    background-color: #3e8e41;
+  }
+  .manage-bar {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .manage-bar button.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  #fleetContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+  }
+  #fleetContainer select, #fleetContainer button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
